@@ -1,6 +1,6 @@
 
 ## DemoWaddle README demo...
-
+![](/resources/mountain.jpg)
 _________________
 
 Ez most egy tesztsor a live previewra..
@@ -21,7 +21,3 @@ _________________
  - Profits were higher than ever.
 
 *Everything* is going according to **plan**.
-
-### Picture
-
-![](/resources/mountain.jpg)
