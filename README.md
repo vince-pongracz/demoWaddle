@@ -1,10 +1,20 @@
 [![Java build pipeline with Gradle](https://github.com/vince-pongracz/demoWaddle/actions/workflows/gradle.yml/badge.svg)](https://github.com/vince-pongracz/demoWaddle/actions/workflows/gradle.yml)
 
-## DemoWaddle README demo...
+# DemoWaddle README
+
+A GitHub Action része az érdekesebb ebbe a repoba, ezt nyugodtan használjátok fel.
+A repoban van egy Java projekt, ami meg van támogatva gradle-lel, ez kell a GitHub action-höz is.
+
+
+
+_________________
+
+Ez a része a README-nek csak demo céllal készült, kis markdown gyakorlás.
+
 ![](/resources/mountain.jpg)
 _________________
 
-Ez most egy tesztsor a live previewra..
+Ez most egy tesztsor.
 _________________
 
 This text is ***really important***.
