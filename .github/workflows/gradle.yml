@@ -40,7 +40,8 @@ jobs:
       run: chmod +x gradlew
     # use the predefined gradle build action (cache is automated)
     # in reality it`s just run the ./gradlew command
-    - uses: gradle/gradle-build-action@v2
+    - name: Gradle build
+      uses: gradle/gradle-build-action@v2
       with:
         # ./gradlew build --scan will be executed: build action of gradle and it also provides a short summary about the build as output
         arguments: build --scan
@@ -53,7 +54,8 @@ jobs:
         path: build/reports/tests/test
         
     # run the app (produces output from app)
-    - uses: gradle/gradle-build-action@v2
+    - name: Gradle run
+      uses: gradle/gradle-build-action@v2
       with:
         arguments: run
         
