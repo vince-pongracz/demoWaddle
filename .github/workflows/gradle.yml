@@ -19,7 +19,7 @@ on:
 jobs:
   build:
     # specify the system(s), which will run the app - sets up also the systems
-    runs-on: [ ubuntu-latest, windows-latest ]
+    runs-on: [ ubuntu-latest]
     # define steps to run the app
     steps:
     # fetch the repository
