@@ -2,7 +2,7 @@
 
 # DemoWaddle README
 
-A GitHub Action része az érdekesebb ebbe a repoba, ezt nyugodtan használjátok fel.
+A GitHub Action része az érdekesebb ebbe a repoba, ezt nyugodtan használjátok fel.\\
 A repoban van egy Java projekt, ami meg van támogatva gradle-lel, ez kell a GitHub action-höz is.
 
 
