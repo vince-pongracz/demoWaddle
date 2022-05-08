@@ -42,6 +42,12 @@ jobs:
       with:
         # ./gradlew build --scan will be executed: build action of gradle and it also provides a short summary about the build as output
         arguments: build --scan
+      # test report
+    - name: Archive test report
+      uses: actions/upload-artifact@v2
+      with:
+        name: Test report
+        path: build/reports/tests/test
       # run the app (produces output from app)
     - uses: gradle/gradle-build-action@v2
       with:
