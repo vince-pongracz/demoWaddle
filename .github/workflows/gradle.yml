@@ -12,7 +12,9 @@ name: Java build pipeline with Gradle
 on:
   # when a new commit is pushed
   push:
-  
+    # if README changes, action should not run (no changes in code, which can break)
+    paths:
+     - '!README.md'
   # when a pull request is opened to the default branch (master or main). This is a environment variable, GitHub knows what to do with it.
   pull_request:
     branches: [ $default-branch ]
