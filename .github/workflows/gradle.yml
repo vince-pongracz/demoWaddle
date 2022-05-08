@@ -17,6 +17,8 @@ jobs:
         java-version: 15
     - name: List
       run: ls -a
+    - name: grant permissions
+      run: chmod +x gradlew
     - uses: gradle/gradle-build-action@v2
       with:
         arguments: build
