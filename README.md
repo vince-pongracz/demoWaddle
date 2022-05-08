@@ -1,3 +1,4 @@
+[![Java build pipeline with Gradle](https://github.com/vince-pongracz/demoWaddle/actions/workflows/gradle.yml/badge.svg)](https://github.com/vince-pongracz/demoWaddle/actions/workflows/gradle.yml)
 
 ## DemoWaddle README demo...
 ![](/resources/mountain.jpg)
