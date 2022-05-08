@@ -10,9 +10,9 @@ name: Java build pipeline with Gradle
 on:
   # when a new commit is pushed
   push:
-  # when commits are pushed to the master branch
+  # when commits are pushed to the default branch (master or main)
   pull_request:
-    branches: [ master ]
+    branches: [ $default-branch ]
 
 # this jobs will be executed during the action (these are the reactions of the actions/event above)
 jobs:
