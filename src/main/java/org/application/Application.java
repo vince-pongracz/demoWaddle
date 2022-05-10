@@ -8,7 +8,8 @@ public class Application {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome in gradle");
+        //Bug here, won't compile:
+        System.out.println("Welcome in gradle")
 
         var ex = new ExampleClass(0, "0 Measurement", Calendar.getInstance().getTime());
         var builder = new GsonBuilder();
