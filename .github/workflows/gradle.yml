@@ -12,8 +12,7 @@ name: Java build pipeline with Gradle
 on:
   # when a new commit is pushed
   push:
-    branches:
-     - '**'
+    branches: [ bugBranch, $default-branch ]
     # if README changes, action should not run (no changes in code, which can break)
     paths:
      - '!README.md'
