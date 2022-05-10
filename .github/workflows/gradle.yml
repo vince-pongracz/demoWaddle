@@ -31,7 +31,7 @@ jobs:
     steps:
     
     # fetch the repository (pull repository to the target OS)
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
     
     # validate gradlew script
     - name: Validate Gradle wrapper (gradlew script)
