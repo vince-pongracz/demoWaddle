@@ -1,10 +1,17 @@
-# DEMO pipeline for java with gradle
+# DEMO pipeline for java build with gradle
 
-# This pipeline:
+# This workflow:
+  # sets up parallel 2 hosts (runners, provided by GithHub) to run (ubuntu, windows)
   # fetches the repository
-  # sets up a host to run
-  # builds the application
-
+  # validates gradle wrapper
+  # sets up gradle
+  # builds the application with gradle
+  # runs the application with gradle
+  
+  ######
+  # and mainly serves a good example for a workflow, how it is working, how to set it up
+  ######
+  
 # name of the pipeline
 name: Java build pipeline with Gradle
 
