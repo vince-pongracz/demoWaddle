@@ -8,6 +8,7 @@
 # name of the pipeline
 name: Java build pipeline with Gradle
 
+#define environment variable to set up java version
 env:
   java_jdk_version: ${{ 15 }}
 
@@ -22,11 +23,15 @@ on:
 
 # this jobs will be executed during the action (these are the reactions of the actions/event above)
 jobs:
-  build-on-ubuntu:
+  #name of job
+  build:
+    # execute strategy - we want to use the same workflow both for windows and unix based OS
     strategy:
       matrix:
         os: [ ubuntu-latest, windows-latest ]
+        
     # specify the system(s), which will run the app - sets up also the systems
+    # matrix.os is a variable of the workflow
     runs-on: ${{ matrix.os }}
     
     # define steps to run the app
@@ -46,14 +51,15 @@ jobs:
         java-version: ${{ env.java_jdk_version }}
     
     # list the files of the repo (in the log you will see if something is missing)
-    - name: List repo files
+    - name: List repo files (windows)
       if: matrix.os == 'windows-latest'
       run: ls
-    - if: matrix.os == 'ubuntu-latest'
+    - name: List repo files (ubuntu)
+      if: matrix.os == 'ubuntu-latest'
       run: ls -a
     
     # grant execute persmission to the gradlew file (otherwise will fail)
-    # windows does not require execute permission..
+    # windows does not require this execute permission..
     - name: Grant permission
       if: matrix.os == 'ubuntu-latest'
       run: chmod +x gradlew
