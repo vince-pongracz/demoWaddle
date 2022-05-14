@@ -47,7 +47,7 @@ jobs:
     
     # list the files of the repo (in the log you will see if something is missing)
     - name: List repo files
-    - if: matrix.os == 'windows-latest'
+      if: matrix.os == 'windows-latest'
       run: ls
     - if: matrix.os == 'ubuntu-latest'
       run: ls -a
